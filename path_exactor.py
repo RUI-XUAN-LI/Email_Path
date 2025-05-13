@@ -83,7 +83,6 @@ def match_remain(data_string):
         from_part = data_string
         by_part = ""
 
-    # 提取数据
     from_emails = re.findall(email_pattern, from_part)
     for from_email in from_emails:
         from_part = from_part.replace(from_email, "")
